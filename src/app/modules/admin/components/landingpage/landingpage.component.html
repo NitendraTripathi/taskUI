@@ -1,0 +1,58 @@
+<div class="container" >
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Pening To Do List</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Status</th>
+            <th scope="col">Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todo of pedinginglst; index as i">
+            <th scope="row" >{{i+1}}</th>
+            <td>{{todo.title}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.status}}</td>
+            <td>{{todo.dueDate|date}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Done To Do List</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Status</th>
+            <th scope="col">Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let todo of donelst; index as i">
+            <th scope="row" >{{i+1}}</th>
+            <td>{{todo.title}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.status}}</td>
+            <td>{{todo.dueDate|date}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
